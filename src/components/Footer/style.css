@@ -1,0 +1,27 @@
+footer {
+    
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100vw;
+    height: 5vh;
+
+    padding: 0 3rem;
+
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #e174a8;
+    
+    background: #081a26 ;
+
+}
+
+footer span {
+    color: #c0f3f6; 
+}
+footer a {
+    color: #c0f3f6; 
+}

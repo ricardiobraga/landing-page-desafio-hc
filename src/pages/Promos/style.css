@@ -1,0 +1,162 @@
+
+
+.promos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100vh;
+    
+    grid-template-areas: "left right";
+                         
+    
+    
+    background: var(--very-low-pink);
+    
+}
+
+
+
+
+.img-left {
+    grid-area: left;
+    width: fit-content; 
+    
+    
+}
+
+.img-left img {
+    height: 100%;
+    
+}
+
+ 
+
+.container-produtos {
+    grid-area: right;    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 10rem;
+
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.logo{
+    width: 100%;
+}
+.logo img {
+    
+    height: 10rem;
+}
+
+.produtos{
+    display: flex;
+    justify-content: space-between;
+    gap: max(4rem);
+    width: 100%;
+}
+
+.produto {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+    border-radius: 3rem 3rem 0 0;
+    background: var(--low-pink);
+    height: 25.7rem;
+    width: 20.7rem;
+}
+
+.produto img {
+    margin: 2rem;
+}
+
+
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 7.7rem;
+    background: var(--strong-purple);
+    line-height: 3rem;
+    
+}
+
+.console-name {
+    
+    font-size: 2rem;
+    color: var(--very-low-pink);
+}
+.console-price {
+    font-size: 3.5rem;
+    color: var(--soft-blue);
+}
+
+form {
+    padding: 3rem;
+    border-radius: 3rem;
+    margin-top: 5rem;
+    width: 100%;
+    background: var(--low-pink);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.form h1 {
+    font-size: 3rem;
+    margin-bottom: .8rem;
+    color: var(--high-pink);
+    
+}
+
+.form input {
+    border-radius: 5rem;
+    width: 95%;
+    height: 3rem;
+    text-align: center;
+    color: var(--strong-purple);
+    background: var(--soft-blue);
+    outline: none;
+    
+    
+
+
+    
+}
+
+.form input::placeholder {
+    text-align: center;
+    color: var(--hard-blue);
+}
+
+.form button {
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    background: var(--hard-blue);
+    margin-top: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--very-low-pink);
+}
+
+
+
+
+
+
+
