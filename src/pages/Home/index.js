@@ -4,17 +4,18 @@ import './style.css'
 
 
 
+
 export default function Home(props) {
 
     return (
+        <>
         <section className="home" id="home">
             
             
             
             <div className="img-left">
 
-                <img  src="/img/imgLeft.png" alt="forma organica" ></img>
-
+               
             </div>
 
             <div className="container">
@@ -31,5 +32,6 @@ export default function Home(props) {
 
             
         </section>
+        </>
     )
 }

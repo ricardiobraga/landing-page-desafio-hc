@@ -17,6 +17,7 @@ export default function Promos(props) {
 
               localStorage.setItem('email', email.value)
               alert('email cadastrado com sucesso!')
+              email.value = ''
               window.location.href = "#home";
           } else {
               alert("favor preecher o campo de cadastro!")
@@ -32,13 +33,14 @@ export default function Promos(props) {
             
             
             
-            <div className="img-left">
+            <div className="img-left-promos">
 
-                <img  src="/img/imgLeft-produtos.png" alt="imagem de fundo" ></img>
+                
 
             </div>
 
             <div className="container-produtos">            
+               
                 <div className="logo">
                     <img src="/img/logo.png" alt="Logo" />
                 </div>

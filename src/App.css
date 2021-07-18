@@ -7,8 +7,8 @@
   
 }
 body{
-  overflow: hidden;
   
+  overflow: hidden;
 }
 
 html {
@@ -22,6 +22,7 @@ html {
   --strong-purple:#5b3e58;
   --soft-blue: #c0f3f6;
   --hard-blue: #5c9093;
+  --white: #eff3f5;
   
   
 }
@@ -33,6 +34,10 @@ html {
   
   
   
+}
+
+#root {
+  width: 100%;
 }
 
 
