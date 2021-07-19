@@ -2,7 +2,7 @@
 
 .promos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 100vh;
     
     grid-template-areas: "left right";
@@ -18,7 +18,7 @@
 
 .img-left-promos {
     grid-area: left;   
-    
+    width: 75rem;
     
     background-image: url('../../assets/imgLeft-produtos.png');
     background-size: contain;
@@ -37,7 +37,7 @@
     justify-content: center;
     align-items: center;
     
-    width: 80%;
+    width: 100%;
 
 
     font-family: 'Poppins', sans-serif;
@@ -46,7 +46,7 @@
 }
 
 .logo{
-    width: 100%;
+    width: 80%;
 }
 .logo img {
     
@@ -56,8 +56,8 @@
 .produtos{
     display: flex;
     justify-content: space-between;
-    gap: max(4rem);
-    width: 100%;
+    
+    width: 80%;
 }
 
 .produto {
@@ -66,15 +66,16 @@
     flex-direction: column;
     justify-content: space-between;
     
-    
     border-radius: 3rem 3rem 0 0;
     background: var(--low-pink);
-    height: 25.7rem;
-    width: 20.7rem;
+    height: 30rem;
+    gap: 2rem;
+    width: 23.7rem;
 }
 
 .produto img {
     margin: 2rem;
+    
 }
 
 
@@ -83,7 +84,7 @@
     display: flex;
     
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 7.7rem;
     background: var(--strong-purple);
     line-height: 3rem;
@@ -92,36 +93,42 @@
 
 .price div {
     display: flex;
-    
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    text-align: center;
+
+    height: 100%;
+    width: 100%;
 }
 
 
 
 .price button {
-    border-radius: 1rem;
-    padding: 2rem 4rem;
-    background: var(--very-low-pink);
+    padding: 0 1rem;
     
+    background: var(--hard-blue);
+    height: 100%;
     cursor: pointer;
     font-size: 2rem;
-    color: var(--hard-blue);
+    color: var(--very-low-pink);
 }
 
 .console-name {
     display: flex;
     align-items: center;
     text-align: center;
-    font-size: 5rem;
+    font-size: 1.2rem;
     color: var(--very-low-pink);
     
 }
-.console-name span {
+.price div span {
     
-    font-size: 7rem;
-    color: var(--very-low-pink);
-    margin-left: 2rem;
+    font-size: 4rem;
+    color: var(--soft-blue);
+    
+    text-align: center;
 }
 
 
@@ -129,7 +136,7 @@ form {
     padding: 3rem;
     border-radius: 3rem;
     margin-top: 5rem;
-    width: 100%;
+    width: 80%;
     background: var(--low-pink);
 }
 
@@ -240,6 +247,34 @@ form {
         width: 70%;
         margin: 2rem;
     }
+
+
+    .console-name {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 5rem;
+        color: var(--very-low-pink);
+        
+    }
+
+    .console-name span {
+    
+        font-size: 7rem;
+        color: var(--very-low-pink);
+        margin-left: 2rem;
+    }
+
+    .price button {
+        border-radius: 1rem;
+        padding: 2rem 4rem;
+        background: var(--very-low-pink);
+        
+        cursor: pointer;
+        font-size: 2rem;
+        color: var(--hard-blue);
+    }
+
     form {
         padding: 3rem;
         border-radius: 3rem;

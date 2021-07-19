@@ -47,7 +47,8 @@ export default function Promos(props) {
                         <img src="/img/prod-snes.png" alt="Logo" />
                        <div className="price">
                             <div>
-                                <p className="console-name">Super Nintendo<span >$200</span></p>
+                                <p className="console-name">Super Nintendo</p>
+                                <span className="console-price" >$200</span>
                                 
                             </div>
                             <button className="btn-product">comprar</button>
@@ -61,7 +62,8 @@ export default function Promos(props) {
                        <div className="price">
 
                             <div>
-                                <p className="console-name">Mega Drive<span >$300</span></p>                                
+                                <p className="console-name">Mega Drive</p>     
+                                <span className="console-price" >$300</span>                          
                             </div>
                             <button className="btn-product">comprar</button>
                        
@@ -72,7 +74,8 @@ export default function Promos(props) {
                         <img src="/img/prod-masters.png" alt="Logo" />
                        <div className="price">
                             <div>
-                                <p className="console-name">Master System<span >$100</span></p>                                
+                                <p className="console-name">Master System</p> 
+                                <span className="console-price" >$100</span>                              
                             </div>
                             <button className="btn-product">comprar</button>
                       

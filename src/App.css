@@ -7,8 +7,12 @@
   
 }
 body{
-
+  overflow-x: hidden; /* Hide horizontal scrollbar */
   /* overflow: hidden; */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 html {
