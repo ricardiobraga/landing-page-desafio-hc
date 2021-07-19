@@ -7,8 +7,8 @@
   
 }
 body{
-  
-  overflow: hidden;
+
+  /* overflow: hidden; */
 }
 
 html {
@@ -36,9 +36,7 @@ html {
   
 }
 
-#root {
-  width: 100%;
-}
+
 
 
 

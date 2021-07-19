@@ -15,7 +15,7 @@ export default function Promos(props) {
 
           if (email.value !== '' || null){
 
-              localStorage.setItem('email', email.value)
+              localStorage.setItem('email', JSON.stringify(email.value))
               alert('email cadastrado com sucesso!')
               email.value = ''
               window.location.href = "#home";
@@ -29,13 +29,10 @@ export default function Promos(props) {
     }
 
     return (
-        <section className="promos" id="promos">
+        <>
+        <section className="promos" id="promos">   
             
-            
-            
-            <div className="img-left-promos">
-
-                
+            <div className="img-left-promos">               
 
             </div>
 
@@ -49,8 +46,11 @@ export default function Promos(props) {
                     <div className="produto">
                         <img src="/img/prod-snes.png" alt="Logo" />
                        <div className="price">
-                            <p className="console-name">Super Nintendo</p>
-                            <p className="console-price">$200</p>
+                            <div>
+                                <p className="console-name">Super Nintendo<span >$200</span></p>
+                                
+                            </div>
+                            <button className="btn-product">comprar</button>
                         </div>                         
                     </div>
 
@@ -59,16 +59,23 @@ export default function Promos(props) {
                         <img src="/img/prod-megad.png" alt="Logo" />
                         
                        <div className="price">
-                       <p className="console-name">Mega Drive</p>
-                        <p className="console-price">$200</p>
+
+                            <div>
+                                <p className="console-name">Mega Drive<span >$300</span></p>                                
+                            </div>
+                            <button className="btn-product">comprar</button>
+                       
                        </div>                         
                     </div>
 
                     <div className="produto">
                         <img src="/img/prod-masters.png" alt="Logo" />
                        <div className="price">
-                        <p className="console-name">Master System</p>
-                        <p className="console-price">$200</p>
+                            <div>
+                                <p className="console-name">Master System<span >$100</span></p>                                
+                            </div>
+                            <button className="btn-product">comprar</button>
+                      
                         </div>                         
                     </div>
                 </div>
@@ -84,5 +91,6 @@ export default function Promos(props) {
             
 
         </section>
+        </>
     )
 }

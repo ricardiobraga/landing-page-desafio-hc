@@ -81,24 +81,49 @@
 
 .price {
     display: flex;
-    flex-direction: column;
+    
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 7.7rem;
     background: var(--strong-purple);
     line-height: 3rem;
     
 }
 
-.console-name {
+.price div {
+    display: flex;
     
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.price button {
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+    background: var(--very-low-pink);
+    
+    cursor: pointer;
     font-size: 2rem;
+    color: var(--hard-blue);
+}
+
+.console-name {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 5rem;
     color: var(--very-low-pink);
+    
 }
-.console-price {
-    font-size: 3.5rem;
-    color: var(--soft-blue);
+.console-name span {
+    
+    font-size: 7rem;
+    color: var(--very-low-pink);
+    margin-left: 2rem;
 }
+
 
 form {
     padding: 3rem;
@@ -153,24 +178,18 @@ form {
     color: var(--very-low-pink);
 }
 
-@media screen and (max-width: 1400px) and (min-width: 520px) {
+@media only screen and  (max-width: 1410px) {
     .promos {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 100vh;
-        
-        grid-template-areas: "right"; 
-        background: var(--very-low-pink);
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100vw;
+            
     }
 
     .container-produtos {
-        grid-area: right;    
-        
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
         
         width: 100%;
     
@@ -185,32 +204,47 @@ form {
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: 3rem;
+        margin: 5rem 0;
+    }
+    .logo img {
+        
+        height: 10rem;
     }
 
     .produtos{
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: max(4rem);
         width: 100%;
-        margin-top: 3rem;
-    }
-    
-    .img-left-promos{
-        display: none;
-        visibility: hidden;
-    }
-
-    .form {
-        margin-bottom: 6vh;
         
     }
+
+    .produto  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .price {
+        width: 100%;
+        padding: 5rem 0;
+    }
+
+    .produto img {
+        width: 70%;
+        margin: 2rem;
+    }
+    form {
+        padding: 3rem;
+        border-radius: 3rem;
+        margin: 5rem 0 5vh 0;
+        width: 100%;
+        background: var(--low-pink);
+    }
 }
-
-
-
-
-
-
-
-

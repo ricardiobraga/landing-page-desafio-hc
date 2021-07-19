@@ -7,7 +7,7 @@ import Footer from './components/Footer'
 function App() {
   return (
    <>
-   <Home className="home-test"  />
+   <Home />
    <Promo />
    <Footer className="footer" />
    </>
