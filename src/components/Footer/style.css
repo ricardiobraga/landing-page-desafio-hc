@@ -25,3 +25,15 @@ footer span {
 footer a {
     color: #c0f3f6; 
 }
+
+
+@media only screen and  (max-width: 1410px) {
+
+    footer {
+
+        font-size: 1rem;
+    }
+    
+
+
+}
