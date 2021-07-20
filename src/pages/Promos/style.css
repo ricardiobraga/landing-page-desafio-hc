@@ -186,7 +186,7 @@ form {
     color: var(--very-low-pink);
 }
 
-@media only screen and  (max-width: 1410px) {
+@media only screen and  (max-width: 141rem) {
     .promos {
         display: flex;
         flex-direction: column;
