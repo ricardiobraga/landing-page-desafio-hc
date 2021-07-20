@@ -61,7 +61,7 @@ export default function Promos(props) {
                         
                        <div className="price">
 
-                            <div>
+                            <div >
                                 <p className="console-name">Mega Drive</p>     
                                 <span className="console-price" >$300</span>                          
                             </div>

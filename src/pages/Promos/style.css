@@ -55,8 +55,9 @@
 
 .produtos{
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
     width: 80%;
 }
 
@@ -74,7 +75,7 @@
 }
 
 .produto img {
-    margin: 2rem;
+    padding: 1rem;
     
 }
 
@@ -119,7 +120,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--very-low-pink);
     
 }
@@ -188,6 +189,7 @@ form {
 @media only screen and  (max-width: 1410px) {
     .promos {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: auto;
@@ -223,7 +225,7 @@ form {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: max(4rem);
+        
         width: 100%;
         
     }
@@ -238,42 +240,58 @@ form {
 
     }
 
-    .price {
-        width: 100%;
-        padding: 5rem 0;
-    }
+
 
     .produto img {
         width: 70%;
-        margin: 2rem;
+        padding: 2rem;
     }
 
 
-    .console-name {
+
+
+    .price {
         display: flex;
-        align-items: center;
-        text-align: center;
-        font-size: 5rem;
-        color: var(--very-low-pink);
         
+        width: 100%;
+        
+        
+        text-align: center;
     }
-
-    .console-name span {
-    
-        font-size: 7rem;
-        color: var(--very-low-pink);
-        margin-left: 2rem;
-    }
-
     .price button {
-        border-radius: 1rem;
-        padding: 2rem 4rem;
-        background: var(--very-low-pink);
+        
+        height: 100%;                                          
+        background: var(--hard-blue);
         
         cursor: pointer;
         font-size: 2rem;
-        color: var(--hard-blue);
+        color: var(--very-low-pink); 
+        outline: none;
+ 
     }
+
+    .price div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .console-name {
+  
+        
+        font-size: 3rem;
+        color: var(--very-low-pink);
+        
+    }
+    .price div span {
+        
+        font-size: 4rem;
+        color: var(--soft-blue);
+        
+        
+    }
+   
 
     form {
         padding: 3rem;
