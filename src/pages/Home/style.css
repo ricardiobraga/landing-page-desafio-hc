@@ -135,7 +135,7 @@
     
 } */
 
-@media only screen and  (max-width: 114rem) {
+@media only screen and  (max-width: 1410px) {
     .home {
         display: flex;
         justify-content: center;

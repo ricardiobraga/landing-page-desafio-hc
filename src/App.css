@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
 
 html {
   scroll-behavior: smooth;
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
 
   --high-pink:#e174a8 ;
   --low-pink:#f6c5dc;  
